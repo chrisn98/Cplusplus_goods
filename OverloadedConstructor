@@ -1,0 +1,31 @@
+Example of overloaded constructor C++
+
+#include <iostream>
+#include <String>
+using namespace std;
+
+class Human
+{
+private:
+    string name;
+    int age;
+public:
+    Human()
+    {
+        age = 0;
+        cout << "Default constructor initialized..." << endl;
+    }
+    Human(string humansName, int humansAge)
+    {
+        name = humansName;
+        age = humansAge;
+        cout << "Overloaded constructor creates :";
+        cout << name << " of" << age << " years old" << endl;
+    }
+};
+int main()
+{
+    Human firstMan; // calls default constructor
+    Human firstWoman("Christina",20); // Calls overloaded constructor
+    return 0;
+}
