@@ -1,2 +1,2 @@
-# C-_goods
+# C++goods
 Some stuff...
