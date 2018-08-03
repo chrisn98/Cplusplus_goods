@@ -1,0 +1,24 @@
+Initializing an Overloaded Constructor with Default Value in Parameter
+
+#include <iostream>
+#include <String.h>
+using namespace std;
+
+class CreditScore
+{
+private:
+    int CreditVal;
+public:
+    CreditScore(int score = 750)
+    {
+        CreditVal = score;
+        cout << "Your credit score is : " << CreditVal << endl;
+    }
+};
+int main()
+{
+    CreditScore dImplement2;
+
+
+    return 0;
+}
