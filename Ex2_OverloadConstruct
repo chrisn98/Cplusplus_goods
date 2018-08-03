@@ -1,0 +1,30 @@
+#include <iostream>
+#include <String.h>
+using namespace std;
+
+class CreditScore
+{
+private:
+    int CreditVal;
+public:
+    CreditScore()
+    {
+        CreditVal=0;
+        cout << "This is just the default constructor!!!" << endl;
+    }
+    CreditScore(int score)
+    {
+        CreditVal = score;
+        cout << "Your credit score is : " << CreditVal << endl;
+    }
+};
+int main()
+{
+    cout << "Enter your credit score : " << endl;
+    int input = 0;
+    cin >> input;
+    CreditScore dImplement;
+    CreditScore dImplement2(input);
+
+    return 0;
+}
